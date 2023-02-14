@@ -15,7 +15,7 @@ def ssl_expiry_date(domainname):
     )
     # 3 second timeout because Lambda has runtime limitations
     conn.settimeout(60.0)
-    if (domainname == domain2) : 
+    if (domainname == domain1) : 
         port = 8080
     else:
         port =  443
